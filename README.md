@@ -1,5 +1,5 @@
 # sample-php-mysql-containerized-app
-
+git clone https://github.com/gkrishnans/sample-php-mysql-containerized-app.git</br>
 docker network create sample-php-mysql-containerized-network</br>
 cd mysql</br>
 docker build .</br>
