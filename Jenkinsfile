@@ -21,6 +21,6 @@ node{
     }
 
     stage ('run php container') {
-        sh "(( docker stop apache || true )) && docker run --name apache -d -p 80:80 --network sample-php-mysql-containerized-network --rm apache_image"
+        sh "(( docker stop apache || true )) && docker run --name apache -d -p 8888:80 --network sample-php-mysql-containerized-network --rm apache_image"
     }
 }
