@@ -16,8 +16,7 @@ node{
     }
 
     stage ('run sql container') {      
-      
-        sh "(( docker stop mysql || true )) && docker run --name mysql -d -p 6033:3306 -v data:/var/lib/mysql/data --network sample-php-mysql-containerized-network --rm mysql_image"
+        sh "(( docker stop mysql || true )) && docker run --name mysql -d -p 6033:3306 -v /opt/datadir:/var/lib/mysql --network sample-php-mysql-containerized-network --rm mysql_image"
     }
 
     stage ('run php container') {
