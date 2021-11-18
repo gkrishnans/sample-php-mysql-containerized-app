@@ -6,3 +6,4 @@ RUN a2enmod headers expires rewrite
 WORKDIR /var/www/html
 COPY . .
 EXPOSE 80
+

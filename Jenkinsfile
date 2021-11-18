@@ -1,5 +1,6 @@
 node{
     stage('Clone repository') {
+        //clone the git repo
         checkout scm
     }
 
