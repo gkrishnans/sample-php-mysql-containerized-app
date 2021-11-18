@@ -8,7 +8,7 @@ node{
     }
 
     stage ('build php image') {
-        sh "docker build -t apache_image --no-cache ./apache"
+        sh "docker build -t apache_image ./apache"
     }
 
     stage ('create docker network') {
